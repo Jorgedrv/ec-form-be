@@ -8,7 +8,7 @@ spring:
       enabled: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ec_form_db
+    url: jdbc:mysql://${HOST_PROD}/ec-form-db
     username: ${USR_ECHURCH_PROD}
     password: ${PWD_ECHURCH_PROD}
   jpa:
@@ -18,4 +18,4 @@ spring:
     show-sql: false
 
 jwt:
-  secret: "133c88625d796b81b88933245e41a5a12b0c16e2ea066505574e24a9b31d8b82"
+  secret: ${SECRECT_PROD}
