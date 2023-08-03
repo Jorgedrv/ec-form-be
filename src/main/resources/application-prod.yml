@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /esperanza-church/v1
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${HOST_PROD}/ec-form-db
+    username: ${USR_ECHURCH_PROD}
+    password: ${PWD_ECHURCH_PROD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+
+jwt:
+  secret: ${SECRECT_PROD}
