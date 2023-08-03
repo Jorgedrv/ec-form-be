@@ -1,0 +1,22 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /esperanza-church/v1
+
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ec_form_db
+    username: root
+    password: 4J:ycJ5VU2!M
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: false
+
+jwt:
+  secret: "javatokenlocal"
