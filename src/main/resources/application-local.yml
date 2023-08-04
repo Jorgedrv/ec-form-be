@@ -8,7 +8,7 @@ spring:
     console:
       enabled: true
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ec_form_db
     username: root
     password: 4J:ycJ5VU2!M
