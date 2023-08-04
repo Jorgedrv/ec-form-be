@@ -18,4 +18,4 @@ spring:
     show-sql: false
 
 jwt:
-  secret: ${SECRECT_PROD}
+  secret: ${JWT_SECRET_PROD}
