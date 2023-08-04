@@ -1,4 +1,5 @@
 server:
+  port: 8080
   servlet:
     context-path: /esperanza-church/v1
 
@@ -8,7 +9,7 @@ spring:
       enabled: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${HOST_PROD}/ec-form-db
+    url: jdbc:mysql://${DB_HOST_PROD}:${DB_PORT_PROD}/ec-form-db
     username: ${USR_ECHURCH_PROD}
     password: ${PWD_ECHURCH_PROD}
   jpa:
