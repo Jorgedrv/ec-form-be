@@ -34,8 +34,8 @@ public class Form implements Serializable {
     @Column(name = "ECF_EMAIL")
     private String email;
 
-    @Column(name = "ECF_MOBILE_PHONE")
-    private String mobilePhone;
+    @Column(name = "ECF_PHONE")
+    private String phone;
 
     @Column(name = "ECF_STREET")
     private String street;

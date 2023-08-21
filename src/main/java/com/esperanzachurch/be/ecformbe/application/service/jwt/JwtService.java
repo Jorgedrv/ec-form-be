@@ -1,4 +1,4 @@
-package com.esperanzachurch.be.ecformbe.application.service;
+package com.esperanzachurch.be.ecformbe.application.service.jwt;
 
 import com.esperanzachurch.be.ecformbe.application.domain.business.JwtRequest;
 import com.esperanzachurch.be.ecformbe.application.domain.business.Token;
