@@ -1,6 +1,5 @@
 package com.esperanzachurch.be.ecformbe.application.domain.business;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
@@ -9,8 +8,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -19,7 +21,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class FormRequest implements Serializable {
+public class EnglishFormRequest implements Serializable {
 
     private static final long serialVersionUID = 5926468583005150809L;
 
@@ -32,36 +34,29 @@ public class FormRequest implements Serializable {
     private String lastName;
 
     @NotNull
-    private String email;
-
-    @NotNull
-    private String phone;
-
-    @NotNull
     private String street;
 
     @NotNull
     private String city;
 
     @NotNull
-    private String state;
+    private Integer postalCode;
 
     @NotNull
-    private String postalCode;
+    private String phone;
 
     @NotNull
-    @JsonDeserialize(using = LocalDateDeserializer.class)
-    private LocalDate birthday;
+    private String email;
 
-    private String spouseName;
+    @NotNull
+    private String countryOfBirth;
 
-    private int spouseWithMe;
+    @NotNull
+    private Integer age;
 
-    private String hereAs;
+    @NotNull
+    private String education;
 
-    private String moreInformation;
-
-    private String readyTo;
-
-    private String comments;
+    @NotNull
+    private String englishLevel;
 }

@@ -13,7 +13,7 @@ public class FormFactory {
                 .email(formRequest.getEmail())
                 .hereAs(formRequest.getHereAs())
                 .lastName(formRequest.getLastName())
-                .mobilePhone(formRequest.getMobilePhone())
+                .phone(formRequest.getPhone())
                 .moreInformation(formRequest.getMoreInformation())
                 .name(formRequest.getName())
                 .postalCode(formRequest.getPostalCode())
