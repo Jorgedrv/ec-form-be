@@ -1,4 +1,4 @@
-package com.esperanzachurch.be.ecformbe.application.service;
+package com.esperanzachurch.be.ecformbe.application.service.visitedForm;
 
 import com.esperanzachurch.be.ecformbe.application.domain.business.FormRequest;
 import com.esperanzachurch.be.ecformbe.application.domain.entity.Form;
