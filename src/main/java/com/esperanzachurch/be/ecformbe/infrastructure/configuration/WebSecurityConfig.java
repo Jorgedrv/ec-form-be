@@ -39,6 +39,8 @@ public class WebSecurityConfig {
                 .permitAll()
                 .antMatchers("/**/english-form/create/**")
                 .permitAll()
+                .antMatchers("/**/spanish-form/create/**")
+                .permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .exceptionHandling()

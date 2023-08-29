@@ -1,7 +1,6 @@
 package com.esperanzachurch.be.ecformbe.application.domain.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -16,8 +15,8 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "EC_FORM")
-public class Form implements Serializable {
+@Table(name = "EC_VISITED_FORM")
+public class VisitedForm implements Serializable {
 
     private static final long serialVersionUID = 5926427583005150709L;
     @Id
