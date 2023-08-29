@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 
 @Data
@@ -13,9 +14,9 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class EnglishFormRequest implements Serializable {
+public class SpanishFormRequest implements Serializable {
 
-    private static final long serialVersionUID = 5926468583005150809L;
+    private static final long serialVersionUID = 5234615234075151803L;
 
     private Long id;
 
@@ -47,8 +48,5 @@ public class EnglishFormRequest implements Serializable {
     private Integer age;
 
     @NotNull
-    private String education;
-
-    @NotNull
-    private String englishLevel;
+    private String spanishLevel;
 }
